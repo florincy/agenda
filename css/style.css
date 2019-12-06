@@ -12,7 +12,17 @@
 @import url('overwrite.css');
 @import url('animate.css');
 
-
+.meu {
+	
+    margin-top:30px;
+    margin-bottom:20px;
+    color:#fff;
+    padding:10px;
+    background:#E9967A;
+}
+.conteudo{
+	font-size:30px;
+}
 
 body {
 	font-family:'Open Sans', Arial, sans-serif;
@@ -210,6 +220,9 @@ a:hover {
       font-size: 18px;
     }
     .carousel-caption h2, .carousel-caption  h2 span, .carousel-caption  p {
+    	font-size:18px;
+    }
+    .conteudo{
     	font-size:18px;
     }
 }
