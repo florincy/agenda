@@ -22,9 +22,12 @@
       document.cookie = nome + '='+ msg;
      // document.cookie = name;
     //  console.log(name);
-      var x = document.cookie;
+     var x = document.cookie;
       console.log (x);
-      document.cookie = "userbb=Joa";
+      var texto;
+      texto = x;
+      document.getElementById('chat').innerHTML = texto;
+      console.log(texto);
       //console.log (msg);
     }
     //document.cookie = "username=John Doe";
