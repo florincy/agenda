@@ -14,16 +14,20 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript">
-    function cria (name){
-      document.cookie = name;
-      console.log(name);
-          console.log (x);
+    var x = document.cookie; 
+    console.log (x);
+    function cria (){
+      document.cookie = document.getElementById('entrada').innerHTML;
+     // document.cookie = name;
+    //  console.log(name);
+      var x = document.cookie;
+      console.log (x);
       document.cookie = "userbb=Joa";
+      console.log (document.getElementById('entrada').innerHTML)
 
     }
     //document.cookie = "username=John Doe";
-    var x = document.cookie; 
-    console.log (x);
+    
 
     function mostra(){
       // var x = document.cookie; 
@@ -158,7 +162,7 @@
             <p id="texto">nada</p>
             <input type="text" id="entrada">
             <button onclick="mostra()">Ver Cookies</button>
-            <button onclick="cria(document.getElementById('entrada').innerHTML)">Criar Cookies</button>
+            <button onclick="cria()">Criar Cookies</button>
             <p>&copy;Resi Theme - All right reserved.</p>
             <div class="credits">
                 <!--
