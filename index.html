@@ -19,7 +19,11 @@
     function cria (){
       var nome = document.getElementById("usuario").value;
       var msg = document.getElementById("entrada").value;
-      document.cookie = nome + '='+ msg;
+      var exdays = 1;
+      var d = new Date();
+      d.setTime(d.getTime() + (300000));
+      var expires = "expires="+ d.toUTCString();
+      document.cookie = nome + '='+ msg + expires;
      // document.cookie = name;
     //  console.log(name);
      var x = document.cookie;
@@ -38,12 +42,11 @@
       // var x = document.cookie; 
        //document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
         //document.getElementById('texto').innerHTML = x;
-        var x = document.cookie;
-        console.log (x);
-        var texto;
-        texto = x;
-        document.getElementById('chat').innerHTML = texto;
-        console.log(texto);
+        var exdays = 1;
+        var d = new Date();
+        d.setTime(d.getTime() + (300000));
+        var expires = "expires="+ d.toUTCString();
+        console.log(expires);
 
 
 
