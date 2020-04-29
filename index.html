@@ -17,13 +17,14 @@
     var x = document.cookie; 
     console.log (x);
     function cria (){
-      document.cookie = document.getElementById('entrada');
+      var msg = document.getElementById("entrada").innerHTML;
+      document.cookie = msg;
      // document.cookie = name;
     //  console.log(name);
       var x = document.cookie;
       console.log (x);
       document.cookie = "userbb=Joa";
-      console.log (document.getElementById('entrada'))
+      console.log (msg
     }
     //document.cookie = "username=John Doe";
     
