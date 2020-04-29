@@ -22,7 +22,8 @@
     document.cookie = "username=John Doe";
     var x = document.cookie; 
     console.log (x);
-    function cookie(){
+
+    function mostra(){
       // var x = document.cookie; 
        //document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
        document.getElementById('texto').innerHTML = "Escrevi";
@@ -154,7 +155,7 @@
           <div class="copyright">
             <p id="texto">nada</p>
             <input type="text" id="entrada">
-            <button onclick=" cookie()">Ver Cookies</button>
+            <button onclick="mostra()">Ver Cookies</button>
             <button onclick="cria(document.getElementById('entrada').innerHTML)">Criar Cookies</button>
             <p>&copy;Resi Theme - All right reserved.</p>
             <div class="credits">
