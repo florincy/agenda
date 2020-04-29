@@ -19,11 +19,11 @@
     function cria (){
       var nome = document.getElementById("usuario").value;
       var msg = document.getElementById("entrada").value;
-      var exdays = 1;
-      var d = new Date();
-      d.setTime(d.getTime() + (300000));
-      var expires = "expires="+ d.toUTCString();
-      document.cookie = nome + '='+ msg + expires;
+      //var exdays = 1;
+      //var d = new Date();
+     // d.setTime(d.getTime() + (300000));
+     // var expires = "expires="+ d.toUTCString();
+      document.cookie = nome + '='+ msg ;
      // document.cookie = name;
     //  console.log(name);
      var x = document.cookie;
