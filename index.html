@@ -24,7 +24,8 @@
     //  console.log(name);
      var x = document.cookie;
       console.log (x);
-      var texto;
+      var texto = document.getElementById('chat').innerHTML;
+      console.log(texto);
       texto = texto + x;
       document.getElementById('chat').innerHTML = texto;
       console.log(texto);
